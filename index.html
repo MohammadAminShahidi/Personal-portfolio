@@ -12,6 +12,8 @@
 
     <link rel="stylesheet" type="text/css" href="default.css">
 
+    <link id="theme-style" rel="stylesheet" type="text/css" href="default.css">
+
     <title>Amin Shahidi - Portfolio</title>
 </head>
 <body>
@@ -40,10 +42,10 @@
                     <h5 style="text-align: center; line-height: 0;">Personalize Theme</h5>
 
                     <div id="theme-options-wrapper">
-                        <div id="light-mode" class="theme-dot"></div>
-                        <div id="blue-mode" class="theme-dot"></div>
-                        <div id="green-mode" class="theme-dot"></div>
-                        <div id="purple-mode" class="theme-dot"></div>
+                        <div data-mode="light" id="light-mode" class="theme-dot"></div>
+                        <div data-mode="blue" id="blue-mode" class="theme-dot"></div>
+                        <div data-mode="green" id="green-mode" class="theme-dot"></div>
+                        <div data-mode="purple" id="purple-mode" class="theme-dot"></div>
                     </div>
 
                     <p id="settings-note">*Theme settings will be saved for<br>for your next visit.</p>
@@ -130,38 +132,44 @@
             <div class="post-wrapper">
 
                 <div class="post">
-                    <img class="thumbnail" src="images/quera.jpg">
+                    <img class="thumbnail" src="images/seam.png">
                     <div class="post-preview">
-                        <h6 class="post-title">Post title</h6>
-                        <p class="post-intro">This is a sentence. this is even more text. 
-                        This is a sentence. this is even more text.This is a sentence. 
-                        this is even more text.This is a sentence. this is even more text.</p>
+                        <h6 class="post-title">Seam Carving</h6>
+                        <p class="post-intro">Seam carving (or liquid rescaling) is an algorithm 
+                        for content-aware image resizing. It functions by establishing a number 
+                        of seams (paths of least importance) in an image and automatically removes 
+                        seams to reduce image size or inserts seams to extend it. In this project 
+                        i implemented this algorithm using Python.</p>
                     </div>
                     <div class="post-more">
-                        <a target="_blank" href="#">Repository</a>
+                        <a target="_blank" href="https://github.com/amin1998sh/seam_carving">Repository</a>
                     </div>
                 </div>
 
                 <div class="post">
-                    <img class="thumbnail" src="images/quera.jpg">
+                    <img class="thumbnail" src="images/linguistic.jpg">
                     <div class="post-preview">
-                        <h6 class="post-title">Post title</h6>
-                        <p class="post-intro">This is a sentence. this is even more text. 
-                        This is a sentence. this is even more text.</p>
+                        <h6 class="post-title">Linguistic Antipatterns</h6>
+                        <p class="post-intro">In this project i implemented a way to refactor
+                        software source code in order to eliminate linguistic antipatterns and 
+                        improve software readability and maintainability for Java programs.
+                        </p>
                     </div>
                     <div class="post-more">
-                        <a target="_blank" href="#">Repository</a>
+                        <a target="_blank" href="https://github.com/amin1998sh/linguistic-anti-patterns">Repository</a>
                     </div>
                 </div>
 
                 <div class="post">
-                    <img class="thumbnail" src="images/quera.jpg">
+                    <img class="thumbnail" src="images/pylean.jpg">
                     <div class="post-preview">
-                        <h6 class="post-title">Post title</h6>
-                        <p class="post-intro">TThis is a sentence.</p>
+                        <h6 class="post-title">Pylean</h6>
+                        <p class="post-intro">Pylean is a "clean code checker" for Python codes. works with both 
+                        .py and .txt and it gives you a clear measurement of your code's cleanness.
+                        </p>
                     </div>
                     <div class="post-more">
-                        <a target="_blank" href="#">Repository</a>
+                        <a target="_blank" href="https://github.com/amin1998sh/pylean">Repository</a>
                     </div>
                 </div>
 
@@ -193,5 +201,7 @@
         </div>
     </section>
     
+    <script type="text/javascript" src="script.js"></script>
+
 </body>
 </html>
